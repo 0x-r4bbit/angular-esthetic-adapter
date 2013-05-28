@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "angular": "1.0.7",
-    "esthetic": "~0.0.1"
+    "jquery-esthetic": "https://rawgithub.com/johannestroeger/esthetic/unstable/src/jquery.esthetic.js"
   },
   "devDependencies": {
     "angular-mocks": "~1.0.7"

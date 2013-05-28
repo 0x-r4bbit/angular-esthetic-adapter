@@ -1,36 +1,29 @@
 describe('pascalprecht.esthetic', function () {
 
-  var $compile, $rootScope, element;
+  /*var $compile, $rootScope, element;
 
   var toCompile = [
-    '<select ng-model="selected" esthetic>',
-      '<option value="foo">foo</option>',
-      '<option value="bar">bar</option>',
+    '<select ng-model="selected" ng-options="id as label for (id, label) in options" esthetic>',
     '</select>'
   ].join('');
 
   var expectedMarkUp = [
-    '<div class="esthetic-select">',
-      '<button class="esthetic-trigger">',
-        '<span>An Option</span>',
-      '</button>',
-      '<div class="esthetic-list">'
-        '<ul hidden="hidden">'
-          '<li class="esthetic-item esthetic-item-selected">',
-            '<button value="A">An Option</button>',
-          '</li>',
-          '<li class="esthetic-item">',
-            '<button value="B">Another Option</button>',
-          '</li>',
-        '</ul>',
-      '</div>',
-      '<input type="hidden" class="esthetic-input" name="select" value="A">',
-    '</div>'
+    '<button class="esthetic-trigger">foo</button>',
+    '<div class="esthetic-list">',
+      '<ul hidden="hidden">',
+        '<li class="esthetic-item">',
+          '<button data-esthetic-val="foo" value="foo">foo</button>',
+        '</li>',
+        '<li class="esthetic-item esthetic-item-selected">',
+          '<button data-esthetic-val="bar" value="bar">bar</button>',
+        '</li>',
+      '</ul>',
+    '</div>',
   ].join('');
 
   beforeEach(module('pascalprecht.esthetic'));
 
-  beforEach(inject(function (_$compile_, _$rootScope_) {
+  beforeEach(inject(function (_$compile_, _$rootScope_) {
     $compile = _$compile_;
     $rootScope = _$rootScope_;
   }));
@@ -38,12 +31,18 @@ describe('pascalprecht.esthetic', function () {
   describe('esthetic directive', function () {
 
     it('should generate the right markup', function () {
-      $rootScope.selected = 'foo';
-      element = $compile(toCompile);
-      $rootScope.digest();
 
-      expect(element.hasClass('esthetic-select'));
-      expect(element.html()).toEqual(expectedMarkUp);
+      $rootScope.options = {
+        foo: 'foo',
+        bar: 'bar'
+      };
+
+      element = $compile(toCompile)($rootScope);
+      $rootScope.$digest();
+
+      
+
+      expect(true).toBe(false);
     });
-  });
+  });*/
 });

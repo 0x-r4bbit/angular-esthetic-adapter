@@ -1,7 +1,7 @@
 {
-  "name": "angular-component-seed",
-  "version": "0.1.1",
-  "description": "Seed for reusable Angular components.",
+  "name": "angular-esthetic-adapter",
+  "version": "0.1.0",
+  "description": "Angular adapter module for esthetic.",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/karma/bin/karma start --browsers Firefox --single-run"

@@ -6,6 +6,8 @@ basePath = '';
 files = [
   JASMINE,
   JASMINE_ADAPTER,
+  'bower_components/jquery/jquery.js',
+  'bower_components/jquery-esthetic/jquery.esthetic.js',
   'bower_components/angular/angular.js',
   'bower_components/angular-mocks/angular-mocks.js',
   'src/**/*.js',
@@ -52,7 +54,7 @@ autoWatch = true;
 // - Safari (only Mac)
 // - PhantomJS
 // - IE (only Windows)
-browsers = [];
+browsers = ['Chrome'];
 
 
 // If browser does not capture in given timeout [ms], kill it

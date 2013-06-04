@@ -2,7 +2,7 @@
   "author": "Pascal Precht",
   "name": "angular-esthetic-adapter",
   "description": "Angular adapter module for esthetic.",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "homepage": "http://github.com/PascalPrecht/angular-esthetic-adapter",
   "repository": {
     "type": "git",

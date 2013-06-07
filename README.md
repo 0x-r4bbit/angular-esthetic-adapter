@@ -31,4 +31,13 @@ And then use the esthetic directive on a select element in your HTML:
 </select>
 ```
 
+To pass options to esthetic plugin, simply add them as object literal as attribute value like this:
+
+```html
+<select esthetic="{ btnClass: 'foo', activeClass: 'bar'">
+  <option value="foo">foo</option>
+  <option value="bar">bar</option>
+</select>
+```
+
 [![WTFPL](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png)](http://wtfpl.net)

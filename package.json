@@ -1,6 +1,6 @@
 {
   "name": "angular-esthetic-adapter",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Angular adapter module for esthetic.",
   "main": "index.js",
   "scripts": {
